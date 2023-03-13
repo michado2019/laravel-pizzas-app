@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
         <div class="pizzasWrapper">
-         <h1 class='text-3xl font-bold underline'>Welcome<h1>
+         <h1>Welcome<h1>
             @foreach($pizzas as $pizza)
              <div class='pizzasFlex'>
              {{ $pizza->name}} - 

@@ -2,8 +2,8 @@
 @extends('layouts.app')
 
 @section('content')
-        <h1 class="welcomeTitle" >
-            Welcome
+        <div class="flex" >
+            <img src='../../public/homeImg.jpeg' alt='img' class='homeImg' />
             <a href='/create'>Order a pizza</a>
-        </h1>
+        </div>
 @endsection
