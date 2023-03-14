@@ -7,28 +7,99 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Pizza App') }}</title>
-
-    <!-- Fonts -->
+    <title>PizzaVilla</title>
+    <!--Font-->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet"> 
     <style>
-     .pizzasWrapper{
+    .pizzasWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     }
-    </style>
-    <!-- Scripts -->
+}
+   .welcomeWrapper {
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: welcomeWrapper 0.5s;
+}
+@keyframes welcomeWrapper {
+0%{
+    margin-top: 0;
+}    
+100%{
+    margin-top: 200px;
+}
+}
+
+.welcomeImg{
+    width: 300px !important;
+    height: 150px !important;
+}
+.welcomeOrder{
+    color: rgb(64, 9, 64);
+    font-size: 20px;
+    font-weight: 600px;
+}
+.welcomeOrder:hover{
+    color: purple;
+    font-size: 24px;
+    font-weight: 600px;
+}
+.createForm-div {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.createForm{
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+.createForm label{
+  font-size: 20px;
+}
+.createName{
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+}
+.createForm input{
+    padding-left: 10px;
+}
+.createCheck-boxes{
+    padding: 2px;
+}
+.createBtn{
+    background-color: rgb(64, 9, 64);
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+}
+.createBtn:hover{
+    font-weight: 600;
+}
+#logoText, #loginText, #registerText {
+    color: rgb(64, 9, 64);
+    font-size: 20px;
+    font-weight: 600;
+}
+</style>
+    <!-- Scripts-->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'PizzaVilla') }}
+                <a class="navbar-brand" href="{{ url('/') }}" id='logoText'>
+                    PizzaVilla
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -46,13 +117,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}" id='loginText'>{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}" id='registerText'>{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else

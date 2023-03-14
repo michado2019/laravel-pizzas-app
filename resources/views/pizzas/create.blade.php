@@ -2,10 +2,10 @@
 @section('content')
         <div class="createWrapper">
             <div class="createForm-div">
-                <form action='/pizzas' method='POST'>
+                <form action='/pizzas' method='POST' class='createForm'>
                     @csrf
                 <label>Your name:</label>
-                <input type='text' id='name' name='name' />
+                <input type='text' id='name' name='name' class='createName'/>
                 <label htmlfor='type'>Choose pizza type:</label>
                 <select name='type' id='type'>
                   <option value='magherita'>Magherita</option>
@@ -22,14 +22,14 @@
                 </select>
                 <fieldset>
                    <label>Add toppings:</label>
-                   <input type='checkbox' name='toppings[]' value='peppers'>Peppers
-                   <input type='checkbox' name='toppings[]' value='garlic'>Garlic
-                   <input type='checkbox' name='toppings[]' value='onions'>onoins
-                   <input type='checkbox' name='toppings[]' value='tomatoes'>tomatoes
+                   <input type='checkbox' name='toppings[]' value='peppers' class='createCheck-boxes'>Peppers
+                   <input type='checkbox' name='toppings[]' value='garlic' class='createCheck-boxes'>Garlic
+                   <input type='checkbox' name='toppings[]' value='onions' class='createCheck-boxes'>onoins
+                   <input type='checkbox' name='toppings[]' value='tomatoes' class='createCheck-boxes'>tomatoes
                 </fieldset>
-                <input type='submit' name='submit' value='Order' />
+                <input type='submit' name='submit' value='Order' class='createBtn'/>
                 </form>
             </div>
         </div>
-        @endsection
+  @endsection
    
