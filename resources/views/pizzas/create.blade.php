@@ -7,14 +7,14 @@
                 <label>Your name:</label>
                 <input type='text' id='name' name='name' class='createName'/>
                 <label htmlfor='type'>Choose pizza type:</label>
-                <select name='type' id='type'>
+                <select name='type' id='type' class='createSelect'>
                   <option value='magherita'>Magherita</option>
                   <option value='veg supreme'>Veg supreme</option>
                   <option value='huwaiin'>Huwaiin</option>
                   <option value='volcano'>Vocano</option>
                 </select>
                 <label>Choose base type:</label>
-                <select name='base' id='type'>
+                <select name='base' id='type' class='createSelect'>
                   <option value='cheesy crust'>Cheesy crust</option>
                   <option value='garlic crust'>Garlic crust</option>
                   <option value='ginger crust'>Ginger crust</option>

@@ -1,0 +1,11 @@
+.pizzasWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcomeWrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    color: dodgerblue;
+}

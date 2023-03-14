@@ -40,12 +40,12 @@
     height: 150px !important;
 }
 .welcomeOrder{
-    color: rgb(64, 9, 64);
+    color: dodgerblue;
     font-size: 20px;
     font-weight: 600px;
 }
 .welcomeOrder:hover{
-    color: purple;
+    color: dodgerblue;
     font-size: 24px;
     font-weight: 600px;
 }
@@ -73,11 +73,17 @@
 .createForm input{
     padding-left: 10px;
 }
+.createSelect{
+    font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+}
 .createCheck-boxes{
     padding: 2px;
 }
 .createBtn{
-    background-color: rgb(64, 9, 64);
+    background-color: dodgerblue;
     border-radius: 5px;
     color: #fff;
     border: 0;
@@ -86,9 +92,12 @@
     font-weight: 600;
 }
 #logoText, #loginText, #registerText {
-    color: rgb(64, 9, 64);
+    color: dodgerblue;
     font-size: 20px;
     font-weight: 600;
+}
+#loginWrapper,#registerWrapper, #resetWrapper{
+    margin-top: 100px !important;
 }
 </style>
     <!-- Scripts-->
