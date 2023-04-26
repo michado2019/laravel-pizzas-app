@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
    .welcomeWrapper {
     display: flex;
@@ -96,9 +97,36 @@
     font-size: 20px;
     font-weight: 600;
 }
-#loginWrapper,#registerWrapper, #resetWrapper{
+#loginWrapper,#registerWrapper, #resetWrapper, #homeWrapper{
     margin-top: 100px !important;
 }
+<!--index-css-->
+.pizzaFlex{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    margin-top: 100px;
+}
+.pizzaFlex2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.indexImg{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 10px;
+    margin: 10px !important;
+}
+.pizzaBase{
+    font-size: 18px;
+}
+.pizzaName{
+    font-size: 16px;
+    font-style: italic;
+    
+}
+
 </style>
     <!-- Scripts-->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
